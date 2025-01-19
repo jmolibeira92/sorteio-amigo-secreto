@@ -134,6 +134,18 @@ ul {
     margin: 20px 0;
 }
 
+p,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+.texto__paragrafo {
+    color: chocolate;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
