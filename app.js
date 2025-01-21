@@ -10,6 +10,7 @@ function adicionarAmigo() {
     else{
         amigos.push(amigoIncluir);
         console.log(amigos);
+        exibirAmigos('p', 'Nomes: ' + amigos);
         limparCampo();
     }
 }
@@ -30,7 +31,6 @@ function sortearAmigo() {
 function exibirTextoSorteado(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function limparCampo() {
@@ -38,3 +38,7 @@ function limparCampo() {
     amigoIncluir.value = '';
 }
 
+function exibirAmigos(tag, texto) {
+    let amigoLista = document.querySelector(tag);
+    amigoLista.innerHTML = texto;
+}
